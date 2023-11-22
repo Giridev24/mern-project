@@ -1,0 +1,11 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.p{
+    background-color: rgb(203, 224, 243);
+    height: 100vh;
+    width: 100vw;
+}

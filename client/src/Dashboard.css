@@ -1,0 +1,121 @@
+/* Dashboard.css */
+
+/* Apply global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the main dashboard container */
+.dash {
+  width: 100%;
+  background-color: aliceblue;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  overflow: hidden;
+}
+
+.d {
+  height: 80vh;
+  min-width: 90vw;
+  
+  position: relative;
+  top: 120px;
+}
+
+th {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 500;
+  color: crimson;
+  border: 1px solid black;
+}
+
+td,
+th {
+  padding: 1em;
+  border: 1px solid #666666;
+}
+
+/* Style for the heading row */
+/* Style for the AddBook button */
+.heading button {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  display: flex;
+}
+
+/* Add this CSS to center the content inside the table cells */
+table {
+  width: 100%;
+}
+
+th, td {
+  text-align: center; /* Horizontal centering */
+  vertical-align: middle; /* Vertical centering */
+}
+
+input {
+  width: 90%;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+@media only screen and (max-width: 1200px){
+  .d {
+    width: 90vw;
+    position: relative;
+   top: 110px;
+    
+  }
+}
+
+/* MEDIA QUERY for screens with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+  .dash {
+    width: 100%; /* Adjust the width for smaller screens */
+  }
+
+  .d {
+    width: 90vw;
+    position: relative;
+    top: 80px;
+    
+  }
+
+  .heading {
+    padding: 0 10px; /* Adjust the padding for smaller screens */
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.c{
+    width: 100vw;
+}
+.card{
+    width: 210px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+.card .btn{
+  color: rgb(255, 255, 255);
+  background-color:crimson;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.card .btn:hover{
+    background-color: rgb(184, 3, 39);
+}
+
+/*---------------------media query---------------------*/
+@media only screen and (max-width: 600px){
+    .card{
+        width: 270px;
+    }
+}
